@@ -49,9 +49,14 @@
                 </nav>
             @endif
         </header>
-        <main class="flex max-w-[335px] w-full flex-col-reverse lg:max-w-4xl lg:flex-row">
-            <h1>Welcome</h1>
-        </main>
+        <main class="flex max-w-[335px] w-full flex-col gap-4 lg:max-w-4xl">
+    <h1 class="mb-2">Welcome</h1>
+    <a href="{{ route('post.index') }}" class="mt-2">
+        <button class="btn btn-primary px-4 py-2 rounded-md shadow-md hover:bg-blue-600 transition-colors">
+            Admin Dashboard
+        </button>
+    </a>
+</main>
         <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
 
         </div>

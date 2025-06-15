@@ -18,4 +18,24 @@ composer install
 php artisan migrate:fresh --seed
 ```
 
+3. Set your own mailtrap account configuration at the **.env** file
+```sh
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=*******
+MAIL_PASSWORD=*******
+```
+
+4. Run this command for run queue (Email Sending)
+```sh
+php artisan queue:listen
+```
+
+5. Run schedule task in your local machine (Archived Post)
+```sh
+php artisan schedule:work
+```
+
+
 

@@ -11,4 +11,9 @@ class Tag extends Model
     use HasFactory;
 
     protected $fillable = ['title'];
+
+    public function taggable()
+    {
+        return $this->morphTo();
+    }
 }

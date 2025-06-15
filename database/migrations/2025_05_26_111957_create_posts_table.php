@@ -15,12 +15,11 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('tag_id');
             $table->string('title');
             $table->text('description');
             $table->string('thumbnail');
             $table->string('image');
-            $table->enum('status', ['Pending', 'Accepted', 'Rejected'])->default('Pending');
+            $table->enum('status', ['Pending', 'Accepted', 'Rejected', 'Archived'])->default('Pending');
             $table->timestamps();
             $table->softDeletes();
         });

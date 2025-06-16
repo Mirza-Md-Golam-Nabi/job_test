@@ -18,6 +18,11 @@ composer install
 php artisan migrate:fresh --seed
 ```
 
+3. Storage Link
+```sh
+php artisan storage:link
+```
+
 3. Set your own mailtrap account configuration at the **.env** file
 ```sh
 MAIL_MAILER=smtp
